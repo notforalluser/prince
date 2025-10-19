@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font setup */
+body {
+  font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, Geneva, sans-serif;
+  background-color: #f9faf3;
+  color: #222;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+/* Optional: additional font utility classes */
+.font-lucida {
+  font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, Geneva, sans-serif;
+}
+
+.font-myriad {
+  font-family: "Myriad Pro", "Myriad Web Pro Regular", "Lucida Grande", Geneva, "Trebuchet MS", sans-serif;
+}
+
+.font-opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font-tahoma {
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.top-bar { background: #fffbe6; }
+.logo-text { font-weight: 700; color: #0f5f8b; }
+.tagline { font-size: 0.95rem; color: #4b5563; font-weight: 600; }
+.nav-link { color: #0f5f8b; font-weight: 600; }
+.news-title { color: #0f5f8b; font-weight: 700; }
+.card-shadow { box-shadow: 0 1px 0 rgba(0,0,0,0.06); }
+
+.back {
+  background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%, #2f76a5),
+    color-stop(8%, #2c74a3),
+    color-stop(13%, #2c72a0),
+    color-stop(34%, #266795),
+    color-stop(35%, #276895),
+    color-stop(36%, #276794),
+    color-stop(38%, #256692),
+    color-stop(39%, #286693),
+    color-stop(45%, #24638e),
+    color-stop(46%, #25628e),
+    color-stop(48%, #23618d),
+    color-stop(49%, #22618c),
+    color-stop(54%, #1f5e86),
+    color-stop(56%, #225c87),
+    color-stop(57%, #1d5d85),
+    color-stop(64%, #1d5880),
+    color-stop(65%, #1d5980),
+    color-stop(67%, #1a567e),
+    color-stop(70%, #1a547b),
+    color-stop(71%, #1c557c),
+    color-stop(72%, #19537a),
+    color-stop(74%, #19537a),
+    color-stop(75%, #1c537a),
+    color-stop(76%, #195279),
+    color-stop(88%, #174e74),
+    color-stop(91%, #144c71),
+    color-stop(92%, #174c71),
+    color-stop(100%, #144a6e)
+  );
+  display: inline-block;
+}
