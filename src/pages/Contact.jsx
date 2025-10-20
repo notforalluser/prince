@@ -138,7 +138,7 @@ function Contact() {
           </div>
 
           {/* Sidebar */}
-          {/* <aside className="space-y-6">
+          <aside className="space-y-6">
             <div className="p-4">
               <div className="text-sm">
                 <div className="mt-3">
