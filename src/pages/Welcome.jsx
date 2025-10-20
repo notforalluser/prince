@@ -21,7 +21,7 @@ export default function Welcome() {
              </div>
 
             {/* Statement + Name */}
-            <div className="flex-shrink-0 text-center sm:text-left -ml-0 sm:-ml-5">
+            <div className="flex-shrink-0 text-center sm:text-left -ml-0">
               <div className="font-semibold">Prince Tiwari</div>
               <a href="#" className="block text-sm text-sky-200 underline mt-1">
                 Software Developer
@@ -47,7 +47,8 @@ export default function Welcome() {
                 <div className="text-sm">Download Resume</div>
                 <div className="mt-2">
                   <a
-                    href="#"
+                    href="PrinceTiwari_Resume.pdf"
+                    download
                     className="inline-flex items-center gap-2 px-3 py-2 bg-[#2b9fb3] rounded text-white text-sm"
                   >
                     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden>
