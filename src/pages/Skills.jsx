@@ -1,4 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
+import {
+  Youtube,
+  Linkedin,
+  Github,
+  Instagram,
+  Code,
+  Code2,
+  Trophy,
+} from "lucide-react";
 
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState("programming");
@@ -64,7 +73,7 @@ export default function Skills() {
   }, [activeCategory]);
 
   // Radial progress component for main skills
-  const RadialProgress = ({ skill, size = 120 }) => {
+  const RadialProgress = ({ skill, size = 100 }) => {
     const radius = size / 2 - 10;
     const circumference = 2 * Math.PI * radius;
     const strokeDashoffset =
@@ -217,24 +226,130 @@ export default function Skills() {
 
           {/* Sidebar */}
           <aside className="leading-loose">
-            <div className="">
-              <div className="text-sm">
-                <div className="">
-                  <div className="font-semibold">Frontend Expertise</div>
-                  <p className="text-sm text-gray-600 mt-1 leading-loose">Modern React development with responsive design using
-                        Tailwind CSS and Bootstrap.</p>
-                </div>
-                <div className="mt-4">
-                  <div className="font-semibold">Backend & Databases</div>
-                  <p className="text-sm text-gray-600 mt-1 leading-loose">Node.js with Express, MongoDB, MySQL, and REST API
-                        development.</p>
-                </div>
+            {/* Social Links Section */}
+            <div className="mb-8">
+              <h3 className="font-semibold mb-4 text-gray-800 text-lg">
+                Connect With Me
+              </h3>
 
-                <div className="mt-4">
-                  <div className="font-semibold">Development Tools</div>
-                  <p className="text-sm text-gray-600 mt-1 leading-loose">Full SDLC experience with Git, Docker, AWS, and modern
-                        development workflows.</p>
-                </div>
+              <div className="flex flex-col space-y-4">
+                {/* YouTube */}
+                <a
+                  href="https://www.youtube.com/@CodingTutorial1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-red-600 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Youtube className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">https://www.youtube.com/@CodingTutorial1</span>
+                </a>
+
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/princetiwari26/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-blue-700 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Linkedin className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">https://www.linkedin.com/in/princetiwari26/</span>
+                </a>
+
+                {/* GitHub */}
+                <a
+                  href="https://github.com/princetiwari26"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-black transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Github className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">https://github.com/princetiwari26</span>
+                </a>
+
+                {/* LeetCode */}
+                <a
+                  href="https://leetcode.com/u/princetiwari_26/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-yellow-600 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Code className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">https://leetcode.com/u/princetiwari_26/</span>
+                </a>
+
+                {/* CodeChef */}
+                <a
+                  href="https://www.codechef.com/users/princetiwari26"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-orange-600 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Trophy className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">https://www.codechef.com/users/princetiwari26</span>
+                </a>
+
+                {/* HackerRank */}
+                <a
+                  href="https://www.hackerrank.com/profile/princetiwari_pr1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-green-600 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Code2 className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">https://www.hackerrank.com/profile/princetiwari_pr1</span>
+                </a>
+
+                {/* Instagram */}
+                <a
+                  href="https://www.instagram.com/princetiwari26__/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 hover:text-pink-600 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Instagram className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">https://www.instagram.com/princetiwari26__/</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Existing Info Section */}
+            <div className="text-sm text-gray-800">
+              <div>
+                <div className="font-semibold">Frontend Expertise</div>
+                <p className="text-gray-600 mt-1 leading-relaxed">
+                  Modern React development with responsive design using Tailwind
+                  CSS and Bootstrap.
+                </p>
+              </div>
+
+              <div className="mt-4">
+                <div className="font-semibold">Backend & Databases</div>
+                <p className="text-gray-600 mt-1 leading-relaxed">
+                  Node.js with Express, MongoDB, MySQL, and REST API
+                  development.
+                </p>
+              </div>
+
+              <div className="mt-4">
+                <div className="font-semibold">Development Tools</div>
+                <p className="text-gray-600 mt-1 leading-relaxed">
+                  Full SDLC experience with Git, Docker, AWS, and modern
+                  development workflows.
+                </p>
               </div>
             </div>
           </aside>
