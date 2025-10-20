@@ -1,6 +1,15 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Mail, Phone, MapPin, CheckCircle, Loader2 } from "lucide-react";
 import emailjs from "emailjs-com";
+import {
+  Youtube,
+  Linkedin,
+  Github,
+  Instagram,
+  Code,
+  Code2,
+  Trophy,
+} from "lucide-react";
 
 function Contact() {
   const form = useRef();
@@ -60,18 +69,10 @@ function Contact() {
             <h1 className="text-2xl font-bold font-myriad">Contact</h1>
 
             <div className="space-y-2">
-              <div
-                id="contactus"
-                className="relative"
-              >
-
+              <div id="contactus" className="relative">
                 <div className="max-w-6xl mx-auto">
                   {/* Contact Form */}
-                  <form
-                    ref={form}
-                    onSubmit={sendEmail}
-                    className="space-y-6"
-                  >
+                  <form ref={form} onSubmit={sendEmail} className="space-y-6">
                     <div className="flex flex-col gap-4">
                       <input
                         name="name"
@@ -133,13 +134,150 @@ function Contact() {
                   </form>
                 </div>
               </div>
-
             </div>
           </div>
 
           {/* Sidebar */}
-          <aside className="space-y-6">
+          {/* <aside className="space-y-6">
             <div className="p-4">
+              <div className="text-sm">
+                <div className="mt-3">
+                  <p>I’m always open to discussing new opportunities,
+                      collaborations, or just a quick chat about technology.
+                      Feel free to reach out!</p>
+                </div>
+                <div className="mt-3">
+                  <div className="font-semibold">Email</div>
+                  <div className="text-sm text-gray-500">princetiwari.profes@gmail.com</div>
+                </div>
+                <div className="mt-3">
+                  <div className="font-semibold">Phone Number</div>
+                  <div className="text-sm text-gray-500">+91 7891922459</div>
+                </div>
+                <div className="mt-3">
+                  <div className="font-semibold">Address</div>
+                  <div className="text-sm text-gray-500">Jaipur, Rajasthan</div>
+                </div>
+              </div>
+            </div>
+          </aside> */}
+          <aside className="leading-loose">
+            {/* Social Links Section */}
+            <div className="mb-8">
+              <h3 className="font-semibold mb-4 text-gray-800 text-lg">
+                Connect With Me
+              </h3>
+
+              <div className="flex flex-col space-y-4">
+                {/* YouTube */}
+                <a
+                  href="https://www.youtube.com/@CodingTutorial1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-red-600 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Youtube className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">
+                    https://www.youtube.com/@CodingTutorial1
+                  </span>
+                </a>
+
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/princetiwari26/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-blue-700 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Linkedin className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">
+                    https://www.linkedin.com/in/princetiwari26/
+                  </span>
+                </a>
+
+                {/* GitHub */}
+                <a
+                  href="https://github.com/princetiwari26"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-black transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Github className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">
+                    https://github.com/princetiwari26
+                  </span>
+                </a>
+
+                {/* LeetCode */}
+                <a
+                  href="https://leetcode.com/u/princetiwari_26/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-yellow-600 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Code className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">
+                    https://leetcode.com/u/princetiwari_26/
+                  </span>
+                </a>
+
+                {/* CodeChef */}
+                <a
+                  href="https://www.codechef.com/users/princetiwari26"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-orange-600 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Trophy className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">
+                    https://www.codechef.com/users/princetiwari26
+                  </span>
+                </a>
+
+                {/* HackerRank */}
+                <a
+                  href="https://www.hackerrank.com/profile/princetiwari_pr1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-700 hover:text-green-600 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Code2 className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">
+                    https://www.hackerrank.com/profile/princetiwari_pr1
+                  </span>
+                </a>
+
+                {/* Instagram */}
+                <a
+                  href="https://www.instagram.com/princetiwari26__/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 hover:text-pink-600 transition"
+                >
+                  <div className="p-1 border-2 border-gray-300">
+                    <Instagram className="w-5 h-5" />
+                  </div>
+                  <span className="text-sm font-medium">
+                    https://www.instagram.com/princetiwari26__/
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            {/* Existing Info Section */}
+            <div className="py-2">
               <div className="text-sm">
                 <div className="mt-3">
                   <p>I’m always open to discussing new opportunities,
