@@ -140,7 +140,7 @@ export default function Skills() {
             <h1 className="text-2xl font-bold font-myriad">Skills</h1>
 
             <div className="space-y-2">
-              <div className="min-h-screen">
+              <div className="">
                 <div className="max-w-7xl mx-auto">
                   {/* Header */}
                   <div className="mb-6 font-Lucida text-sm">
