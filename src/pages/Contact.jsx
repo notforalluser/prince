@@ -138,29 +138,6 @@ function Contact() {
           </div>
 
           {/* Sidebar */}
-          <aside className="space-y-6">
-            <div className="p-4">
-              <div className="text-sm">
-                <div className="mt-3">
-                  <p>I’m always open to discussing new opportunities,
-                      collaborations, or just a quick chat about technology.
-                      Feel free to reach out!</p>
-                </div>
-                <div className="mt-3">
-                  <div className="font-semibold">Email</div>
-                  <div className="text-sm text-gray-500">princetiwari.profes@gmail.com</div>
-                </div>
-                <div className="mt-3">
-                  <div className="font-semibold">Phone Number</div>
-                  <div className="text-sm text-gray-500">+91 7891922459</div>
-                </div>
-                <div className="mt-3">
-                  <div className="font-semibold">Address</div>
-                  <div className="text-sm text-gray-500">Jaipur, Rajasthan</div>
-                </div>
-              </div>
-            </div>
-          </aside> */}
           <aside className="leading-loose">
             {/* Social Links Section */}
             <div className="mb-8">
